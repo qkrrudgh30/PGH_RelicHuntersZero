@@ -7,6 +7,9 @@
     <Filter Include="Platform">
       <UniqueIdentifier>{241f82d8-3336-4d8e-bad6-51ad5be958c1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Object">
+      <UniqueIdentifier>{864b1e18-61c8-4e39-9240-97b78d9490bc}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameEngineDebug.cpp">
@@ -15,6 +18,9 @@
     <ClCompile Include="GameEngineWindow.cpp">
       <Filter>Platform</Filter>
     </ClCompile>
+    <ClCompile Include="GameEngineNameObject.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameEngineDebug.h">
@@ -22,6 +28,9 @@
     </ClInclude>
     <ClInclude Include="GameEngineWindow.h">
       <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngineNameObject.h">
+      <Filter>Object</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

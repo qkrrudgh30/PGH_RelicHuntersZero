@@ -159,10 +159,20 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="EndingLevel.h" />
+    <ClInclude Include="FirstMazeLevel.h" />
     <ClInclude Include="PackMan.h" />
+    <ClInclude Include="SecondMazeLevel.h" />
+    <ClInclude Include="ThirdMazeLevel.h" />
+    <ClInclude Include="TitleLevel.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="EndingLevel.cpp" />
+    <ClCompile Include="FirstMazeLevel.cpp" />
     <ClCompile Include="PackMan.cpp" />
+    <ClCompile Include="SecondMazeLevel.cpp" />
+    <ClCompile Include="ThirdMazeLevel.cpp" />
+    <ClCompile Include="TitleLevel.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

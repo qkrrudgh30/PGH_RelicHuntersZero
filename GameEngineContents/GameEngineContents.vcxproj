@@ -159,17 +159,21 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BotUI.h" />
     <ClInclude Include="EndingLevel.h" />
     <ClInclude Include="FirstMazeLevel.h" />
     <ClInclude Include="PackMan.h" />
+    <ClInclude Include="Player.h" />
     <ClInclude Include="SecondMazeLevel.h" />
     <ClInclude Include="ThirdMazeLevel.h" />
     <ClInclude Include="TitleLevel.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="BotUI.cpp" />
     <ClCompile Include="EndingLevel.cpp" />
     <ClCompile Include="FirstMazeLevel.cpp" />
     <ClCompile Include="PackMan.cpp" />
+    <ClCompile Include="Player.cpp" />
     <ClCompile Include="SecondMazeLevel.cpp" />
     <ClCompile Include="ThirdMazeLevel.cpp" />
     <ClCompile Include="TitleLevel.cpp" />

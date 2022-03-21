@@ -17,6 +17,12 @@
     <ClInclude Include="ThirdMazeLevel.h">
       <Filter>Level</Filter>
     </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Actor\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="BotUI.h">
+      <Filter>Actor\Global</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="TitleLevel.cpp">
@@ -35,10 +41,28 @@
     <ClCompile Include="ThirdMazeLevel.cpp">
       <Filter>Level</Filter>
     </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Actor\Global</Filter>
+    </ClCompile>
+    <ClCompile Include="BotUI.cpp">
+      <Filter>Actor\Global</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Level">
       <UniqueIdentifier>{1701ab93-000d-45d7-979e-430463bad349}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Actor">
+      <UniqueIdentifier>{2df433d3-6bcf-4cb1-9360-9f58cc5dfdaf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Actor\Title">
+      <UniqueIdentifier>{76303163-6ec4-458d-aea6-95e514ee1f49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Actor\FirstMaze">
+      <UniqueIdentifier>{94d20c52-f449-42ce-9a30-58cf25204750}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Actor\Global">
+      <UniqueIdentifier>{a18f5915-24dd-4d80-bfa9-30f9d0b33b04}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

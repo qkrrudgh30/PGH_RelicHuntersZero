@@ -53,6 +53,9 @@ private:
     bool WindowOn_;
     HINSTANCE hInst_;
     HWND hWnd_;
+/*
+    HDC란, RAM에 올라와있는 깊이 RGB인 2차원 배열에 접근해서 데이터를 수정할 수 있는 핸들.
+*/
     HDC HDC_;
     float4 Scale_;
 

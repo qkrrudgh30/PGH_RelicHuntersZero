@@ -13,6 +13,12 @@
     <Filter Include="Math">
       <UniqueIdentifier>{4e1c3857-2762-4e7a-9b5a-bb123cd027ec}</UniqueIdentifier>
     </Filter>
+    <Filter Include="IO">
+      <UniqueIdentifier>{2924858b-48d7-49ae-8e31-85d4d709df6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="String">
+      <UniqueIdentifier>{347c606b-df8d-4638-94c8-8d1a2d19d454}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameEngineDebug.cpp">
@@ -27,6 +33,18 @@
     <ClCompile Include="GameEngineMath.cpp">
       <Filter>Math</Filter>
     </ClCompile>
+    <ClCompile Include="GameEngineDirectory.cpp">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEnginePath.cpp">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngineFile.cpp">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngineString.cpp">
+      <Filter>String</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameEngineDebug.h">
@@ -40,6 +58,18 @@
     </ClInclude>
     <ClInclude Include="GameEngineMath.h">
       <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngineDirectory.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEnginePath.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngineFile.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngineString.h">
+      <Filter>String</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

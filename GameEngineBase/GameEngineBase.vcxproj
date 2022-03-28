@@ -96,6 +96,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -110,6 +111,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -124,6 +126,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -138,6 +141,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -148,14 +152,22 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="GameEngineDebug.h" />
+    <ClInclude Include="GameEngineDirectory.h" />
+    <ClInclude Include="GameEngineFile.h" />
     <ClInclude Include="GameEngineMath.h" />
     <ClInclude Include="GameEngineNameObject.h" />
+    <ClInclude Include="GameEnginePath.h" />
+    <ClInclude Include="GameEngineString.h" />
     <ClInclude Include="GameEngineWindow.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameEngineDebug.cpp" />
+    <ClCompile Include="GameEngineDirectory.cpp" />
+    <ClCompile Include="GameEngineFile.cpp" />
     <ClCompile Include="GameEngineMath.cpp" />
     <ClCompile Include="GameEngineNameObject.cpp" />
+    <ClCompile Include="GameEnginePath.cpp" />
+    <ClCompile Include="GameEngineString.cpp" />
     <ClCompile Include="GameEngineWindow.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

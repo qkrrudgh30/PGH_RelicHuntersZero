@@ -14,6 +14,15 @@
     <ClInclude Include="GameEngineActor.h">
       <Filter>Object\Actor</Filter>
     </ClInclude>
+    <ClInclude Include="GameEngineEnum.h">
+      <Filter>Global</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngineActorSubObject.h">
+      <Filter>Object\Actor\SubObject</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngineRenderer.h">
+      <Filter>Object\Actor\SubObject</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameEngine.cpp" />
@@ -29,6 +38,12 @@
     <ClCompile Include="GameEngineActor.cpp">
       <Filter>Object\Actor</Filter>
     </ClCompile>
+    <ClCompile Include="GameEngineActorSubObject.cpp">
+      <Filter>Object\Actor\SubObject</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngineRenderer.cpp">
+      <Filter>Object\Actor\SubObject</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Object">
@@ -42,6 +57,12 @@
     </Filter>
     <Filter Include="Object\Actor">
       <UniqueIdentifier>{32679821-b018-47a2-b223-44fdc603aa75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Actor\SubObject">
+      <UniqueIdentifier>{8f4ce336-4451-4358-a976-b2fc9e806b2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Global">
+      <UniqueIdentifier>{6b2a29fb-6ea8-462b-bafb-b4c60cc85036}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

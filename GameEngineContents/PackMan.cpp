@@ -33,7 +33,6 @@ void PackMan::GameInit()
         GameEngineImageManager::GetInst()->Load(AllImageFileList[i].GetFullPath());
     }
 
-
     CreateLevel<TitleLevel>("Title");
     CreateLevel<FirstMazeLevel>("FirstMaze");
     CreateLevel<EndingLevel>("Ending");

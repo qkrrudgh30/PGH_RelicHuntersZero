@@ -157,16 +157,21 @@
   <ItemGroup>
     <ClInclude Include="GameEngine.h" />
     <ClInclude Include="GameEngineActor.h" />
+    <ClInclude Include="GameEngineActorSubObject.h" />
+    <ClInclude Include="GameEngineEnum.h" />
     <ClInclude Include="GameEngineImage.h" />
     <ClInclude Include="GameEngineImageManager.h" />
     <ClInclude Include="GameEngineLevel.h" />
+    <ClInclude Include="GameEngineRenderer.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameEngine.cpp" />
     <ClCompile Include="GameEngineActor.cpp" />
+    <ClCompile Include="GameEngineActorSubObject.cpp" />
     <ClCompile Include="GameEngineImage.cpp" />
     <ClCompile Include="GameEngineImageManager.cpp" />
     <ClCompile Include="GameEngineLevel.cpp" />
+    <ClCompile Include="GameEngineRenderer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GameEngineBase\GameEngineBase.vcxproj">

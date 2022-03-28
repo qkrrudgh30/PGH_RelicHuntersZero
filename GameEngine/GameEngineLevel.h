@@ -51,22 +51,9 @@ protected:
         std::list<GameEngineActor*>& Group = AllActor_[_Order];
         Group.push_back(NewActor);
 
-        //// _Order 액터들이 돌아가는 순서를 의미하게 된다.
-        //// insert와 find를 동시에 하게 됩니다.
-        //
-        //	
-
-        //
-        //{
-
-        //	// 
-        //	// 이게더 빠릅니다.
-        //	
-        //	FindGroup = AllActor_.find(_Order);
-        //}
-
         return nullptr;
     }
+
 
 private:
     std::map<int, std::list<GameEngineActor*>> AllActor_;

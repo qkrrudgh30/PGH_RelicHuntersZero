@@ -22,37 +22,38 @@ public:
     GameEngineLevel& operator=(const GameEngineLevel& _Other) = delete;
     GameEngineLevel& operator=(GameEngineLevel&& _Other) noexcept = delete;
 
-protected:
-    virtual void Loading() = 0;
-    virtual void Update() = 0;
-    virtual void LevelChangeStart() {}
-    virtual void LevelChangeEnd() {}
-
     template<typename ActorType>
-    ActorType* CreateActor(const std::string& _Name, int _Order)
+    ActorType* CreateActor(int _Order = 0, const std::string& _Name = "")
     {
         ActorType* NewActor = new ActorType();
         GameEngineActor* StartActor = NewActor;
         NewActor->SetName(_Name);
         NewActor->SetLevel(this);
         StartActor->Start();
-
-/*
-    map에서 [] 연산자는 find와 insert를 동시에 함.
-    즉, 아래와 같이 동작하는 것.
-    std::map<int, std::list<GameEngineActor*>>::iterator FindGroup = AllActor_.find(_Order);
-
-    if (FindGroup == AllActor_.end())
-    {
-        AllActor_.insert(std::map<int, std::list<GameEngineActor*>>::value_type(_Order, std::list<GameEngineActor*>()));
-        // == AllActor_.insert(std::make_pair(_Order, std::list<GameEngineActor*>())); 같은 코드지만, 위 코드가 좀 더 빠름.
-    }
-*/
         std::list<GameEngineActor*>& Group = AllActor_[_Order];
         Group.push_back(NewActor);
+        /*
+            map에서 [] 연산자는 find와 insert를 동시에 함.
+            즉, 아래와 같이 동작하는 것.
+            std::map<int, std::list<GameEngineActor*>>::iterator FindGroup = AllActor_.find(_Order);
 
-        return nullptr;
+            if (FindGroup == AllActor_.end())
+            {
+                AllActor_.insert(std::map<int, std::list<GameEngineActor*>>::value_type(_Order, std::list<GameEngineActor*>()));
+                // == AllActor_.insert(std::make_pair(_Order, std::list<GameEngineActor*>())); 같은 코드지만, 위 코드가 좀 더 빠름.
+            }
+        */
+
+        return NewActor;
     }
+
+protected:
+    virtual void Loading() = 0;
+    virtual void Update() = 0;
+    virtual void LevelChangeStart() {}
+    virtual void LevelChangeEnd() {}
+
+    
 
 
 private:
@@ -60,6 +61,7 @@ private:
 
     void ActorUpdate();
     void ActorRender();
+    void ActorRelease();
 
 };
 

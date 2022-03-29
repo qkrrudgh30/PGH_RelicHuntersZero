@@ -2,6 +2,7 @@
 
 #pragma once
 #include <GameEngineBase/GameEngineNameObject.h>
+#include <GameEngineBase/GameEngineUpdateObject.h>
 #include <GameEngineBase/GameEngineMath.h>
 #include "GameEngineEnum.h"
 #include <list>
@@ -10,7 +11,7 @@
 
 class GameEngineRenderer;
 class GameEngineLevel;
-class GameEngineActor : public GameEngineNameObject
+class GameEngineActor : public GameEngineNameObject, public GameEngineUpdateObject
 {
 public:
     friend GameEngineLevel;
@@ -37,6 +38,11 @@ public:
     inline float4 GetScale()
     {
         return Scale_;
+    }
+
+    inline void SetMove(float4 _Value)
+    {
+        Position_ += _Value;
     }
 
     inline void SetPosition(float4 _Value)

@@ -4,6 +4,8 @@
 #include <GameEngineBase/GameEngineWindow.h>
 #include "GameEngineLevel.h"
 #include "GameEngineImageManager.h"
+#include <GameEngineBase/GameEngineInput.h>
+#include <GameEngineBase/GameEngineTime.h>
 
 std::map<std::string, GameEngineLevel*> GameEngine::AllLevel_;
 GameEngineLevel* GameEngine::CurrentLevel_ = nullptr;
@@ -57,6 +59,8 @@ void GameEngine::EngineInit()
 }
 void GameEngine::EngineLoop()
 {
+    GameEngineTime::GetInst()->Update();
+
     UserContents_->GameLoop();
 
     // 시점함수
@@ -75,6 +79,7 @@ void GameEngine::EngineLoop()
         }
 
         NextLevel_ = nullptr;
+        GameEngineTime::GetInst()->Reset();
 
         Rectangle(WindowMainImage_->ImageDC(), 0, 0, WindowMainImage_->GetScale().ix(), WindowMainImage_->GetScale().iy());
         Rectangle(BackBufferImage_->ImageDC(), 0, 0, BackBufferImage_->GetScale().ix(), BackBufferImage_->GetScale().iy());
@@ -85,11 +90,15 @@ void GameEngine::EngineLoop()
         MsgBoxAssert("Level is nullptr => GameEngine Loop Error");
     }
 
+    GameEngineInput::GetInst()->Update();
+
     CurrentLevel_->Update();
     CurrentLevel_->ActorUpdate();
     CurrentLevel_->ActorRender();
 
     WindowMainImage_->BitCopy(BackBufferImage_);
+
+    CurrentLevel_->ActorRelease();
 }
 
 void GameEngine::EngineEnd()
@@ -109,7 +118,8 @@ void GameEngine::EngineEnd()
     }
 
     GameEngineImageManager::Destroy();
-
+    GameEngineInput::Destroy();
+    GameEngineTime::Destroy();
     GameEngineWindow::Destroy();
 }
 

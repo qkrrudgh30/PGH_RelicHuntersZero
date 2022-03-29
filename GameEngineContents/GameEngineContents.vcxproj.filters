@@ -23,6 +23,9 @@
     <ClInclude Include="BotUI.h">
       <Filter>Actor\Global</Filter>
     </ClInclude>
+    <ClInclude Include="Bullet.h">
+      <Filter>Actor\Global</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="TitleLevel.cpp">
@@ -45,6 +48,9 @@
       <Filter>Actor\Global</Filter>
     </ClCompile>
     <ClCompile Include="BotUI.cpp">
+      <Filter>Actor\Global</Filter>
+    </ClCompile>
+    <ClCompile Include="Bullet.cpp">
       <Filter>Actor\Global</Filter>
     </ClCompile>
   </ItemGroup>

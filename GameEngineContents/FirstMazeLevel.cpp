@@ -30,6 +30,7 @@ void FirstMazeLevel::Update()
 
 void FirstMazeLevel::LevelChangeStart()
 {
-    CreateActor<Player>("Player", (int)ORDER::PLAYER);
-    CreateActor<BotUI>("BotUI", (int)ORDER::UI);
+    CreateActor<Player>((int)ORDER::PLAYER);
+    CreateActor<BotUI>((int)ORDER::UI);
 }
+

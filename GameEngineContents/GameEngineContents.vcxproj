@@ -164,6 +164,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BotUI.h" />
+    <ClInclude Include="Bullet.h" />
     <ClInclude Include="EndingLevel.h" />
     <ClInclude Include="FirstMazeLevel.h" />
     <ClInclude Include="PackMan.h" />
@@ -174,6 +175,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BotUI.cpp" />
+    <ClCompile Include="Bullet.cpp" />
     <ClCompile Include="EndingLevel.cpp" />
     <ClCompile Include="FirstMazeLevel.cpp" />
     <ClCompile Include="PackMan.cpp" />

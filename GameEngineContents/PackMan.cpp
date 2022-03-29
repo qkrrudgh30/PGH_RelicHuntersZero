@@ -37,7 +37,7 @@ void PackMan::GameInit()
     CreateLevel<FirstMazeLevel>("FirstMaze");
     CreateLevel<EndingLevel>("Ending");
 
-    ChangeLevel("FirstMaze");
+    ChangeLevel("Title");
 }
 
 void PackMan::GameLoop()

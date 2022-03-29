@@ -4,6 +4,7 @@
 #include <GameEngineBase/GameEngineTime.h>
 
 Bullet::Bullet()
+    : Time(0.f)
 {
 }
 

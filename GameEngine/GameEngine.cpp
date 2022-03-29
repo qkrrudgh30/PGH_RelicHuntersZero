@@ -63,7 +63,7 @@ void GameEngine::EngineLoop()
 
     UserContents_->GameLoop();
 
-    // 시점함수
+    // 시점함수. [Switch CurrentLevel_ to NextLevel_]
     if (nullptr != NextLevel_)
     {
         if (nullptr != CurrentLevel_)

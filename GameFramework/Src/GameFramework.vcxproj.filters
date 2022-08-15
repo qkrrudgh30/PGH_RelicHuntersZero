@@ -1,0 +1,606 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="01_GameManager">
+      <UniqueIdentifier>{38f00f23-15c0-4928-a722-0d97c6d7cda8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_GameManager\Timer">
+      <UniqueIdentifier>{3f4c8d37-3813-46ba-b967-dc77569df177}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_GameManager\Ref">
+      <UniqueIdentifier>{bce4d649-3410-417c-b3c2-3a7db436fafd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02_Scene">
+      <UniqueIdentifier>{8c389687-a7a4-498b-ac91-e0f1b8e25eda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03_Object">
+      <UniqueIdentifier>{b6c4f752-b781-4c1e-8723-49c2ac696f3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03_Object\Character">
+      <UniqueIdentifier>{8821d81d-1c75-4211-8e1f-c725a3663afe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03_Object\Character\Player">
+      <UniqueIdentifier>{589043b9-c220-4769-8459-7faa899d0062}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03_Object\Bullet">
+      <UniqueIdentifier>{d79b4eec-3798-4b15-b4a9-60083fe34f5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02_Scene\MainScene">
+      <UniqueIdentifier>{5f31ab78-d728-418a-a288-491f15c3c135}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03_Object\Character\Monster">
+      <UniqueIdentifier>{c16bf91d-6d1f-402d-bf5a-d0ed6763ef1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_GameManager\Input">
+      <UniqueIdentifier>{3d6148f1-1199-44df-b303-7a7f4a15bb64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_GameManager\SharedPtr">
+      <UniqueIdentifier>{f6fb8d81-97f8-4d8f-81db-8864bf1ccacc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_GameManager\Path">
+      <UniqueIdentifier>{be0e8549-5477-4bd8-a937-04f85dc111f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04_Resource">
+      <UniqueIdentifier>{eb1c530a-04e8-4147-a9db-0999980cd672}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04_Resource\Texture">
+      <UniqueIdentifier>{9c1ad741-20c1-463c-b143-3f5b37a2812e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04_Resource\Sound">
+      <UniqueIdentifier>{86055aeb-70c0-48be-93c9-c8c07a02085f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02_Scene\Resource">
+      <UniqueIdentifier>{243d8159-3579-4fdd-9de0-a52413413e7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05_Animation">
+      <UniqueIdentifier>{584bd108-c926-4664-88eb-b86a7e6018e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04_Resource\Animation">
+      <UniqueIdentifier>{a29eeebe-99b0-48bf-b484-bdb977a0a802}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03_Object\Gun">
+      <UniqueIdentifier>{298d71f3-1a9d-415c-8828-7141f12c95c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="06_Collision">
+      <UniqueIdentifier>{32e49762-a37c-417e-b205-55d57b01c849}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02_Scene\Collision">
+      <UniqueIdentifier>{c12d9f97-ed64-497b-ada3-066cbec6e34e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03_Object\Effect">
+      <UniqueIdentifier>{3c73f7d2-5d19-4d7e-82a4-3e580de9258e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02_Scene\Camera">
+      <UniqueIdentifier>{92a2c15c-4746-48d5-ab5e-a4c9e6ca892b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="07_UI">
+      <UniqueIdentifier>{45dee6dc-8029-4730-a3c4-ecf6b8d5810e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="07_UI\UIWidget">
+      <UniqueIdentifier>{9b72cb3d-37a9-438d-83e4-14d940d9a2cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="07_UI\UIWindow">
+      <UniqueIdentifier>{eb077e95-584d-40ba-8811-0784000b5fdf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="07_UI\UIWidget\UIWidgetButton">
+      <UniqueIdentifier>{909f8d85-afc4-48f1-bb04-2634c48a9480}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="07_UI\UIWidget\UIWigetImage">
+      <UniqueIdentifier>{b122e181-a6d6-47bc-add7-4bdbebd8f084}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02_Scene\SceneIntro">
+      <UniqueIdentifier>{182ff455-a5cd-4d63-a273-82a87e90d5e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02_Scene\SceneStage1">
+      <UniqueIdentifier>{d5cb139a-cbe3-4252-9ac0-0b8cb7670aa3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="07_UI\UIWindow\UIWindowIntro">
+      <UniqueIdentifier>{2b22371c-4307-4a90-9e27-5b72fb3ec54d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04_Resource\Sound\FMOD">
+      <UniqueIdentifier>{3deb61df-bdc8-406d-a0b1-4f3e04415c99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="07_UI\UIWidget\UIWidgetProgressBar">
+      <UniqueIdentifier>{abec4194-887d-4289-b745-7f810c76d2a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="07_UI\UIWindow\UIWindowMain">
+      <UniqueIdentifier>{a275fe04-953b-4b8b-a3a5-d2b65160d0e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="07_UI\UIWindow\UIWindowHUD">
+      <UniqueIdentifier>{e15ed69e-839e-4efa-9777-9f241ee8dfba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="07_UI\UIWidget\UIWidgetText">
+      <UniqueIdentifier>{4a0c1e7a-1760-4026-9fa3-7efb33381871}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04_Resource\Font">
+      <UniqueIdentifier>{2649210a-3c6a-4f19-961e-f1009144a977}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="07_UI\UIComponent">
+      <UniqueIdentifier>{e478cdb4-c96e-455f-ad74-4030228dad23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="07_UI\UIWidget\UIWidgetMouse">
+      <UniqueIdentifier>{23d10077-7b03-4524-80a3-c7694b806cb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03_Object\SpawnPoint">
+      <UniqueIdentifier>{faf16865-4b28-4fc1-9752-0463a0066363}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03_Object\SpawnMonster">
+      <UniqueIdentifier>{2db08e4f-a64e-4d16-a183-901f69cf7157}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03_Object\SpawnPlayer">
+      <UniqueIdentifier>{fc25da33-3012-4850-a431-7efb0384b980}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03_Object\Character\Monster\KamikazeLite">
+      <UniqueIdentifier>{3501510e-d8d0-43c4-85aa-52010b773246}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03_Object\Character\Monster\Kamikaze">
+      <UniqueIdentifier>{d97ad021-f86b-4faa-b0ec-6167bea9b742}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03_Object\Character\Monster\KamikazeBoss">
+      <UniqueIdentifier>{0fb7bb2c-f6db-4407-a568-dfdeb3db69ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03_Object\Character\Monster\KamikazeCage">
+      <UniqueIdentifier>{8fead39c-fbc9-4553-85da-65b80a15d466}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03_Object\Potal">
+      <UniqueIdentifier>{47dc2ddd-ca1e-4c67-94d0-71cc17acdb23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02_Scene\SceneStage2">
+      <UniqueIdentifier>{17ad0d93-0276-4e6a-afc9-8f6aab910180}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="08_Map">
+      <UniqueIdentifier>{6b887e48-5fa8-4c81-9a93-2976e9adf925}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02_Scene\SceneEditStage">
+      <UniqueIdentifier>{075d46a0-4d8f-473b-a35c-5f52255d1d0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="07_UI\UIWindow\UIWindowEdit">
+      <UniqueIdentifier>{ec194dfd-da50-451d-bf8e-b2432e9e0f92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="07_UI\UIWindow\UIWindowESC">
+      <UniqueIdentifier>{a76f87eb-7f8d-47c4-8c79-6dd7009b5202}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03_Object\WallTile">
+      <UniqueIdentifier>{6713f3b7-985a-45a4-923f-0368a6f3b727}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="GameManager.cpp">
+      <Filter>01_GameManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>01_GameManager\Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="Ref.cpp">
+      <Filter>01_GameManager\Ref</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Object.cpp">
+      <Filter>03_Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Character.cpp">
+      <Filter>03_Object\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Player.cpp">
+      <Filter>03_Object\Character\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Bullet.cpp">
+      <Filter>03_Object\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Scene.cpp">
+      <Filter>02_Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SceneManager.cpp">
+      <Filter>02_Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\MainScene.cpp">
+      <Filter>02_Scene\MainScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Monster.cpp">
+      <Filter>03_Object\Character\Monster</Filter>
+    </ClCompile>
+    <ClCompile Include="Input.cpp">
+      <Filter>01_GameManager\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="PathManager.cpp">
+      <Filter>01_GameManager\Path</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\ResourceManager.cpp">
+      <Filter>04_Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Texture.cpp">
+      <Filter>04_Resource\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SceneResource.cpp">
+      <Filter>02_Scene\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation\Animation.cpp">
+      <Filter>05_Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\AnimationSequence.cpp">
+      <Filter>04_Resource\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Gun.cpp">
+      <Filter>03_Object\Gun</Filter>
+    </ClCompile>
+    <ClCompile Include="Collision\CollisionManager.cpp">
+      <Filter>06_Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Collision\Collider.cpp">
+      <Filter>06_Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Collision\ColliderBox.cpp">
+      <Filter>06_Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SceneCollision.cpp">
+      <Filter>02_Scene\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Collision\Collision.cpp">
+      <Filter>06_Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Collision\ColliderSphere.cpp">
+      <Filter>06_Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Vec.cpp">
+      <Filter>헤더 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\EffectHit.cpp">
+      <Filter>03_Object\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Camera.cpp">
+      <Filter>02_Scene\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\UIWidget.cpp">
+      <Filter>07_UI\UIWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\UIWindow.cpp">
+      <Filter>07_UI\UIWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\UIWidgetButton.cpp">
+      <Filter>07_UI\UIWidget\UIWidgetButton</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\UIWidgetImage.cpp">
+      <Filter>07_UI\UIWidget\UIWigetImage</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\UIWindowIntro.cpp">
+      <Filter>07_UI\UIWindow\UIWindowIntro</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SceneIntro.cpp">
+      <Filter>02_Scene\SceneIntro</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Sound.cpp">
+      <Filter>04_Resource\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\UIWidgetProgressBar.cpp">
+      <Filter>07_UI\UIWidget\UIWidgetProgressBar</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\UIWindowMain.cpp">
+      <Filter>07_UI\UIWindow\UIWindowMain</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\UIWindowHUD.cpp">
+      <Filter>07_UI\UIWindow\UIWindowHUD</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Font.cpp">
+      <Filter>04_Resource\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\UIWidgetText.cpp">
+      <Filter>07_UI\UIWidget\UIWidgetText</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\UIComponent.cpp">
+      <Filter>07_UI\UIComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\SpawnPoint.cpp">
+      <Filter>03_Object\SpawnPoint</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\SpawnMonster.cpp">
+      <Filter>03_Object\SpawnMonster</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\SpawnPlayer.cpp">
+      <Filter>03_Object\SpawnPlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\KamikazeLite.cpp">
+      <Filter>03_Object\Character\Monster\KamikazeLite</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\KamikazeCage.cpp">
+      <Filter>03_Object\Character\Monster\KamikazeCage</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Kamikaze.cpp">
+      <Filter>03_Object\Character\Monster\Kamikaze</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\KamikazeBoss.cpp">
+      <Filter>03_Object\Character\Monster\KamikazeBoss</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SceneStage1.cpp">
+      <Filter>02_Scene\SceneStage1</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Potal.cpp">
+      <Filter>03_Object\Potal</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SceneStage2.cpp">
+      <Filter>02_Scene\SceneStage2</Filter>
+    </ClCompile>
+    <ClCompile Include="Map\MapBase.cpp">
+      <Filter>08_Map</Filter>
+    </ClCompile>
+    <ClCompile Include="Map\TileMap.cpp">
+      <Filter>08_Map</Filter>
+    </ClCompile>
+    <ClCompile Include="Map\Tile.cpp">
+      <Filter>08_Map</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SceneEditStage.cpp">
+      <Filter>02_Scene\SceneEditStage</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\EditorDlg.cpp">
+      <Filter>02_Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Map\ScrollMap.cpp">
+      <Filter>08_Map</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\UIWindowEdit.cpp">
+      <Filter>07_UI\UIWindow\UIWindowEdit</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\UIWindowESC.cpp">
+      <Filter>07_UI\UIWindow\UIWindowESC</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\WallTile.cpp">
+      <Filter>03_Object\WallTile</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="GameInfo.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="GameManager.h">
+      <Filter>01_GameManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Vec.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>01_GameManager\Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="Ref.h">
+      <Filter>01_GameManager\Ref</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Object.h">
+      <Filter>03_Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Character.h">
+      <Filter>03_Object\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Player.h">
+      <Filter>03_Object\Character\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Bullet.h">
+      <Filter>03_Object\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Scene.h">
+      <Filter>02_Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneManager.h">
+      <Filter>02_Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\MainScene.h">
+      <Filter>02_Scene\MainScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Monster.h">
+      <Filter>03_Object\Character\Monster</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>01_GameManager\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Flag.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="SharedPtr.h">
+      <Filter>01_GameManager\SharedPtr</Filter>
+    </ClInclude>
+    <ClInclude Include="PathManager.h">
+      <Filter>01_GameManager\Path</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\ResourceManager.h">
+      <Filter>04_Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Texture.h">
+      <Filter>04_Resource\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneResource.h">
+      <Filter>02_Scene\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation\Animation.h">
+      <Filter>05_Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation\AnimationInfo.h">
+      <Filter>05_Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\AnimationSequence.h">
+      <Filter>04_Resource\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Gun.h">
+      <Filter>03_Object\Gun</Filter>
+    </ClInclude>
+    <ClInclude Include="Collision\CollisionManager.h">
+      <Filter>06_Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Collision\Collider.h">
+      <Filter>06_Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Collision\ColliderBox.h">
+      <Filter>06_Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneCollision.h">
+      <Filter>02_Scene\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Collision\Collision.h">
+      <Filter>06_Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Collision\ColliderSphere.h">
+      <Filter>06_Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\EffectHit.h">
+      <Filter>03_Object\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Camera.h">
+      <Filter>02_Scene\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\UIWidget.h">
+      <Filter>07_UI\UIWidget</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\UIWindow.h">
+      <Filter>07_UI\UIWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\UIWidgetButton.h">
+      <Filter>07_UI\UIWidget\UIWidgetButton</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\UIWidgetImage.h">
+      <Filter>07_UI\UIWidget\UIWigetImage</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\UIWindowIntro.h">
+      <Filter>07_UI\UIWindow\UIWindowIntro</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneIntro.h">
+      <Filter>02_Scene\SceneIntro</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\아비\GameFramework\Include\fmod_output.h">
+      <Filter>04_Resource\Sound\FMOD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\아비\GameFramework\Include\fmod.h">
+      <Filter>04_Resource\Sound\FMOD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\아비\GameFramework\Include\fmod.hpp">
+      <Filter>04_Resource\Sound\FMOD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\아비\GameFramework\Include\fmod_codec.h">
+      <Filter>04_Resource\Sound\FMOD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\아비\GameFramework\Include\fmod_common.h">
+      <Filter>04_Resource\Sound\FMOD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\아비\GameFramework\Include\fmod_dsp.h">
+      <Filter>04_Resource\Sound\FMOD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\아비\GameFramework\Include\fmod_dsp_effects.h">
+      <Filter>04_Resource\Sound\FMOD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\아비\GameFramework\Include\fmod_errors.h">
+      <Filter>04_Resource\Sound\FMOD</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Sound.h">
+      <Filter>04_Resource\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\UIWidgetProgressBar.h">
+      <Filter>07_UI\UIWidget\UIWidgetProgressBar</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\UIWindowMain.h">
+      <Filter>07_UI\UIWindow\UIWindowMain</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\UIWindowHUD.h">
+      <Filter>07_UI\UIWindow\UIWindowHUD</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Font.h">
+      <Filter>04_Resource\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\UIWidgetText.h">
+      <Filter>07_UI\UIWidget\UIWidgetText</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\UIComponent.h">
+      <Filter>07_UI\UIComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\SpawnPoint.h">
+      <Filter>03_Object\SpawnPoint</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\SpawnMonster.h">
+      <Filter>03_Object\SpawnMonster</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\SpawnPlayer.h">
+      <Filter>03_Object\SpawnPlayer</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\KamikazeLite.h">
+      <Filter>03_Object\Character\Monster\KamikazeLite</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\KamikazeCage.h">
+      <Filter>03_Object\Character\Monster\KamikazeCage</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Kamikaze.h">
+      <Filter>03_Object\Character\Monster\Kamikaze</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\KamikazeBoss.h">
+      <Filter>03_Object\Character\Monster\KamikazeBoss</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneStage1.h">
+      <Filter>02_Scene\SceneStage1</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Potal.h">
+      <Filter>03_Object\Potal</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneStage2.h">
+      <Filter>02_Scene\SceneStage2</Filter>
+    </ClInclude>
+    <ClInclude Include="Map\MapBase.h">
+      <Filter>08_Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Map\TileMap.h">
+      <Filter>08_Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Map\Tile.h">
+      <Filter>08_Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneEditStage.h">
+      <Filter>02_Scene\SceneEditStage</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\EditorDlg.h">
+      <Filter>02_Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Map\ScrollMap.h">
+      <Filter>08_Map</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\UIWindowEdit.h">
+      <Filter>07_UI\UIWindow\UIWindowEdit</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\UIWindowESC.h">
+      <Filter>07_UI\UIWindow\UIWindowESC</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\WallTile.h">
+      <Filter>03_Object\WallTile</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GameFramework.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon1.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\..\아비\GameFramework\Include\fmod.cs">
+      <Filter>04_Resource\Sound\FMOD</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\아비\GameFramework\Include\fmod_dsp.cs">
+      <Filter>04_Resource\Sound\FMOD</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\아비\GameFramework\Include\fmod_errors.cs">
+      <Filter>04_Resource\Sound\FMOD</Filter>
+    </None>
+  </ItemGroup>
+</Project>

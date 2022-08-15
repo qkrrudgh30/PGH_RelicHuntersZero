@@ -1,0 +1,187 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어(대한민국) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "icon1.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG_EDITOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 330
+        VERTGUIDE, 24
+        VERTGUIDE, 42
+        VERTGUIDE, 60
+        VERTGUIDE, 78
+        VERTGUIDE, 96
+        VERTGUIDE, 114
+        VERTGUIDE, 132
+        VERTGUIDE, 150
+        VERTGUIDE, 168
+        VERTGUIDE, 186
+        VERTGUIDE, 204
+        VERTGUIDE, 222
+        VERTGUIDE, 240
+        VERTGUIDE, 258
+        VERTGUIDE, 276
+        VERTGUIDE, 294
+        VERTGUIDE, 312
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 311
+        HORZGUIDE, 24
+        HORZGUIDE, 42
+        HORZGUIDE, 60
+        HORZGUIDE, 78
+        HORZGUIDE, 96
+        HORZGUIDE, 114
+        HORZGUIDE, 132
+        HORZGUIDE, 150
+        HORZGUIDE, 168
+        HORZGUIDE, 186
+        HORZGUIDE, 204
+        HORZGUIDE, 222
+        HORZGUIDE, 239
+        HORZGUIDE, 258
+        HORZGUIDE, 276
+        HORZGUIDE, 294
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_EDITOR DIALOGEX 0, 0, 337, 318
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_RIGHT
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "타일가로개수",IDC_STATIC,7,7,53,17,SS_CENTERIMAGE | WS_BORDER
+    LTEXT           "타일세로개수",IDC_STATIC,7,42,53,17,SS_CENTERIMAGE | WS_BORDER
+    LTEXT           "타일가로크기",IDC_STATIC,133,7,53,17,SS_CENTERIMAGE | WS_BORDER
+    LTEXT           "타일세로크기",IDC_STATIC,133,42,53,17,SS_CENTERIMAGE | WS_BORDER
+    LTEXT           "시작프레임",IDC_STATIC,133,114,53,17,SS_CENTERIMAGE | WS_BORDER
+    LTEXT           "끝프레임",IDC_STATIC,133,142,53,17,SS_CENTERIMAGE | WS_BORDER
+    LTEXT           "타일 편집",IDC_STATIC,142,70,53,17,SS_CENTERIMAGE | WS_BORDER
+    LTEXT           "타일 옵션",IDC_STATIC,214,70,53,17,SS_CENTERIMAGE | WS_BORDER
+    EDITTEXT        IDC_EDIT_TILECOUNTX,60,7,54,17,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_TILECOUNTY,60,42,54,17,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_TILESIZEX,186,7,54,17,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_TILESIZEY,186,42,54,17,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_STARTFRAMEX,186,114,36,17,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_ENDFRAMEX,186,142,36,17,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_STARTFRAMEY,240,114,36,17,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_ENDFRAMEY,240,142,36,17,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "맵생성",IDC_BUTTON_CREATEMAP,258,7,54,53
+    PUSHBUTTON      "타일 불러오기",IDC_BUTTON_TILETEXTURELOAD,69,78,54,18
+    PUSHBUTTON      "타일 선택",IDC_BUTTON_SETTEXTURE,69,114,54,18
+    PUSHBUTTON      "프레임 추가",IDC_BUTTON_ADDFRAME,132,168,47,18
+    PUSHBUTTON      "프레임 제거",IDC_BUTTON_DELETEFRAME,186,168,47,18
+    PUSHBUTTON      "프레임 수정",IDC_BUTTON_MODIFYFRAME,240,168,47,18
+    LISTBOX         IDC_LIST_TILETEXTURE,7,78,53,90,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LIST_TEXTUREFRAME,294,69,36,126,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_EDITMODE,141,90,54,60,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_TILEOPTION,213,90,54,54,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "저장하기",IDC_BUTTON_SAVE,69,294,54,17
+    PUSHBUTTON      "불러오기",IDC_BUTTON_LOAD,141,294,54,17
+    PUSHBUTTON      "모두 지우기",IDC_BUTTON_IMAGECLEAR,69,150,54,18
+    CTEXT           "개체 설치",IDC_STATIC,142,204,53,17,SS_CENTERIMAGE | WS_BORDER
+    PUSHBUTTON      "플레이어 스폰",IDC_BUTTON_SETPLAYER,24,240,61,18
+    PUSHBUTTON      "몬스터1 스폰",IDC_BUTTON_SETMONSTER1,179,240,61,18
+    PUSHBUTTON      "몬스터2 스폰",IDC_BUTTON_SETMONSTER2,251,240,61,18
+    PUSHBUTTON      "보스 몬스터 에그",IDC_BUTTON_SETBOSS,96,240,61,18
+    CTEXT           "하나만 설치가능",IDC_STATIC,51,222,71,17,SS_CENTERIMAGE | WS_BORDER
+    CTEXT           "여러개 설치가능",IDC_STATIC,214,222,71,17,SS_CENTERIMAGE | WS_BORDER
+    PUSHBUTTON      "스테이지1 포탈",IDC_BUTTON_SETPOTAL1,24,258,61,18
+    PUSHBUTTON      "스테이지2 포탈",IDC_BUTTON_SETPOTAL2,96,258,61,18
+    PUSHBUTTON      "돌아가기",IDC_BUTTON_GOTOINTRO,213,294,54,17
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_DIALOG_EDITOR AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // 한국어(대한민국) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
